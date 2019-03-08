@@ -101,4 +101,8 @@ public static void main(String[] args) {
 				if(len == -1)break;
 				outputStream.write(arr, 0, len);
 ```
-> 추가적으로 예외처리는 필수이다.
+inmputStream의 내용을 OutputStream의 경로에 존재하는 txt파일에 복사하는 과정이다. 3byte 단위로 읽어오고난 후 outputStream에 write한다.
+
+> 추가적으로 예외처리는 필수이다. (CheckedException)
+
+### File을 다루는 코드에서는 항상 예외처리를 (FileNotFound, EOF 등) 해주어야 한다. 얼마전에 배운 try를 이용해서 익숙하지 않을 수 있지만 전체적인 형식은 동일하니 여러번 반복해서 코드를 입력하다 보면 빨리 익숙해질 것이라고 생각한다.
